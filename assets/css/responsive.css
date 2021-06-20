@@ -1,0 +1,43 @@
+/* Mobie */
+@media (max-width: 739px){
+  
+    #header .mobile-menu-btn{
+        display: block;
+    }
+
+    #header{
+        overflow: hidden;
+    }
+  #nav {
+       display: block;
+   }
+
+    #nav > li {
+        display: block;
+    }
+
+    #nav li a{
+        padding: 1px 24px;
+    }
+
+    #nav .subnav{
+        position: initial;
+        background-color: black;
+        
+    }
+
+    
+    #nav .subnav a{
+        color: white;
+        padding: 5px 41px;
+    }
+
+    #content .about-text{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .place-items{
+        width: 100%;
+    }
+}

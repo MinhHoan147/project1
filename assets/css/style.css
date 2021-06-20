@@ -1,0 +1,315 @@
+ * {
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+  }
+
+  html {
+      font-family: Arial, Helvetica, sans-serif;
+  }
+
+
+.clear {
+    clear: both;
+}
+
+/* tạo menu */
+
+#header {
+    height: 55px;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.85;
+    z-index: 1;
+}
+
+#header ul {
+    margin-bottom: 0px;
+}
+
+#header .mobile-menu-btn{
+    float: right;
+    padding: 0 21px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
+
+#header .mobile-menu-btn:hover{
+    cursor: pointer;
+    background-color: dimgrey;
+}
+
+#header .mobile-menu-icon{
+    color: white;
+    font-size: 20px;
+    line-height: 55px;
+}
+
+#nav {
+    display: inline-block;
+}
+
+#nav .subnav {
+     list-style-type: none;
+}
+
+#nav > li {
+    display:inline-block; /* tạo các khối nằm ngang */
+}
+
+#nav li{
+    position: relative ;
+}
+
+#nav > li:first-child{
+display: inline-block;
+}
+
+#nav > li > a{
+    color:white;
+    text-transform: uppercase;
+}
+
+#nav li a{
+    line-height: 55px;
+    text-decoration: none;
+    padding: 0 24px;
+    display: block;
+   }
+
+#nav li:hover .subnav{
+    display: block;
+}
+
+#nav .subnav li:hover a,
+#nav > li:hover > a{
+    color: black;
+    font-weight: 600;
+    background-color: darkgray;
+}
+
+#nav .subnav{
+     display: none;
+     position: absolute;
+     top: 100%;
+     background-color: white;
+     box-shadow: 0 0 10px rgb(0, 0, 0, 0.3);
+     min-width: 160px;
+     opacity: 0.8;
+}
+
+#nav .subnav a{
+    color: black;
+    padding: 0 12px;
+    line-height: 38px;
+    display: block;
+}
+
+#nav .font1 {
+    font-size: 10px;
+}
+
+/* tạo phần backgound slide */
+#slider{
+    padding-top: 60%;
+    background: url('/assets/img/slider/background1.jpg') top center / cover no-repeat;
+
+}
+
+
+.text-content{
+    position: absolute;
+    bottom: 5px;
+    color:white;
+    text-align: center;
+    width: 100%;
+}
+
+.text-heading{
+  font-size: 30px;
+}
+
+.text-description{
+  font-size: 20px;
+  margin-top: 8px;
+}
+
+/* tạo các phần trong content */
+
+/* .content-section{
+     margin-bottom: 48px;
+} */
+
+/* about part */
+
+#content .content-section{
+    width: 1000px;
+    max-width: 100%;
+    padding: 64px 0px 48px;
+    margin-left: auto;
+    margin-right: auto;
+    /* padding-left: 16px;
+    padding-right: 16px; */
+    
+}
+
+#content .section-heading{
+    font-weight: 500;
+    font-size: 28px;
+    text-align: center;
+    letter-spacing: 3px;
+    margin-top: 60px;
+}
+
+#content .section-sub-heading{
+  font-size: 16px;
+  text-align: center;
+  font-style: italic;
+  opacity: 0.6;
+  margin-top: 20px;
+}
+
+#content .about-text{
+    margin-top: 25px;
+    line-height: 1.4;
+    text-align: justify;
+}
+
+
+
+/* tour part */
+
+
+.tour-section{
+    background-color: moccasin;
+    color: black;
+}
+
+
+.places-list{
+margin-top: 32px;
+}
+
+.place-items{
+    float: left;
+    width: 33.333333%;
+    padding: 0 8px;
+    margin-bottom: 50px;
+    color:rgb(12, 110, 12);
+}
+
+.place-img{
+    width: 100%;
+    border-radius: 3px;
+}
+.place-img:hover {
+    opacity: 0.7;
+}
+.place-body{
+    background-color:ivory;
+    border-radius: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.place-heading{
+    font-size: 23px;
+    font-weight: 550;
+
+}
+
+.show-more-places{
+  
+}
+
+.about-more-places{
+    font-size: 20px;
+    font-weight: 600;
+    font-style: italic;
+    font-family: serif;
+}
+
+/* contact */
+
+#contact .row {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+
+#contact .col-icon {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+.col-icon i[class*="ti-"]{
+    width: 30px;
+    display: inline-block;
+}
+
+#contact .col-form {
+    font-weight: 500;
+    font-size: 15px;
+}
+
+#contact .col,
+#contact .col-6{
+    padding: 0px;
+}
+
+
+.container .col-icon{
+    font-weight: 500;
+    font-family: cursive;
+    font-size: 16px;
+}
+
+#footer .col{
+    margin-top: 12px;
+}
+
+.input-contact {
+    border: 1px solid #ccc;
+    padding: 12px;
+    width: 100%;
+}
+
+.submit-btn{
+    margin-top: 16px;
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    padding: 5px 9px;
+    float: right;
+}
+
+.submit-btn:hover{
+    background-color:rgb(71, 69, 69);
+    color: black;
+}
+
+
+/* footer */
+
+#footer{
+    margin-top: 30px;
+    text-align: center;
+}
+
+#footer i[class*="ti-"]{
+    width: 25px;
+    display: inline-block;
+}
+
+#footer .end{
+    font-size: 12px;
+}
+
+
+

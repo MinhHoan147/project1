@@ -1,0 +1,196 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+ }
+
+ html {
+     font-family: Arial, Helvetica, sans-serif;
+ }
+
+
+.clear {
+   clear: both;
+}
+
+/* tạo menu */
+
+#header {
+   height: 55px;
+   background-color: black;
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+   opacity: 0.8;
+   z-index: 1;
+}
+
+#header ul {
+   margin-bottom: 0px;
+}
+
+#header .mobile-menu-btn{
+   float: right;
+   padding: 0 21px;
+   position: absolute;
+   top: 0;
+   right: 0;
+   display: none;
+}
+
+#header .mobile-menu-btn:hover{
+   cursor: pointer;
+   background-color: dimgrey;
+}
+
+#header .mobile-menu-icon{
+   color: white;
+   font-size: 20px;
+   line-height: 55px;
+}
+
+#nav {
+   display: inline-block;
+}
+
+#nav .subnav {
+    list-style-type: none;
+}
+
+#nav > li {
+   display:inline-block; /* tạo các khối nằm ngang */
+}
+
+#nav li{
+   position: relative ;
+}
+
+#nav > li:first-child{
+display: inline-block;
+}
+
+#nav > li > a{
+   color:white;
+   text-transform: uppercase;
+}
+
+#nav li a{
+   line-height: 55px;
+   text-decoration: none;
+   padding: 0 24px;
+   display: block;
+  }
+
+#nav li:hover .subnav{
+   display: block;
+}
+
+#nav .subnav li:hover a,
+#nav > li:hover > a{
+   color: black;
+   font-weight: 600;
+   background-color:gray;
+}
+
+#nav .subnav{
+    display: none;
+    position: absolute;
+    top: 100%;
+    background-color: white;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.3);
+    min-width: 160px;
+}
+
+#nav .subnav a{
+   color: black;
+   padding: 0 12px;
+   line-height: 38px;
+   display: block;
+}
+
+#nav .font1 {
+   font-size: 10px;
+}
+
+
+/* các phần trong slide */
+#slider{
+    padding-top: 60%;
+    background: url('/assets/img/slider/background5.jpg') top center / cover no-repeat;
+}
+
+
+.text-content{
+    position: absolute;
+    bottom: 5px;
+    color:white;
+    text-align: center;
+    width: 100%;
+}
+
+.text-heading{
+  font-size: 30px;
+}
+
+.text-description{
+  font-size: 20px;
+  margin-top: 8px;
+}
+
+
+
+ /* content */
+
+ #content .content-section{
+   width: 1000px;
+   max-width: 100%;
+   padding: 64px 0px 48px;
+   margin-left: auto;
+   margin-right: auto;
+   /* padding-left: 16px;
+   padding-right: 16px; */
+   
+}
+
+#content .container{
+   margin-top: 48px;
+   margin-bottom: 48px;
+}
+
+.content-section ul li{
+    list-style-type: none;
+}
+
+.content-section img{
+   width: 250px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer */
+#footer{
+   margin-top: 30px;
+   text-align: center;
+   border-top: 1px dashed gray;
+}
+
+#footer i[class*="ti-"]{
+   width: 25px;
+   display: inline-block;
+   padding-top: 15px;
+}
+
+#footer .end{
+   font-size: 12px;
+}
